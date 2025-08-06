@@ -1,0 +1,88 @@
+/* ===== Enhanced Dark Mode ===== */
+[data-theme="dark"] {
+  /* Base Colors */
+  --dm-bg: #121212;
+  --dm-surface: #1e1e1e;
+  --dm-text: #f0f0f0;
+  --dm-text-secondary: #b0b0b0;
+  --dm-primary: #64b5f6;
+  --dm-divider: #333;
+  --dm-hover: #2a2a2a;
+  --dm-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+
+  /* Base Styles */
+  background-color: var(--dm-bg);
+  color: var(--dm-text);
+
+  h1, h2, h3, h4, h5, h6 { color: white; }
+
+  /* Navbar */
+  .navbar { background-color: rgba(30, 30, 30, 0.95) !important; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); }
+  .nav-link { color: var(--dm-text-secondary) !important; }
+  .nav-link:hover { color: var(--dm-primary) !important; }
+
+  /* --- FIX FOR SKILLS SECTION TEXT --- */
+  /* This rule targets any text inside a .bg-light section when dark mode is active */
+  .bg-light .skills-subtitle,
+  .bg-light .skill-item h6,
+  .bg-light .skill-item span,
+  .bg-light .section-header h2 {
+      color: var(--dm-text) !important;
+  }
+  .bg-light .section-header h2 span {
+      color: var(--dm-primary) !important;
+  }
+
+  /* Cards, Resume Items & Containers */
+  .resume-item,
+  .project-card,
+  .contact-info,
+  .contact-form {
+    background-color: var(--dm-surface);
+    border: 1px solid var(--dm-divider);
+    border-left-color: var(--dm-primary);
+    color: var(--dm-text);
+    box-shadow: var(--dm-shadow);
+  }
+
+  /* --- ATTRACTIVE HOVER EFFECTS --- */
+  .resume-item:hover,
+  .project-card:hover {
+    background-color: var(--dm-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border-left-color: #90caf9;
+  }
+
+  /* Progress Bars */
+  .progress { background-color: #2a2a2a; }
+  .progress-bar { background-color: var(--dm-primary); }
+
+  /* Buttons Hover Effects */
+  .btn-primary:hover {
+    background-color: #90caf9; /* Lighter blue */
+    border-color: #90caf9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(100, 181, 246, 0.4);
+  }
+  .btn-outline-light:hover {
+    border-color: var(--dm-primary);
+    background-color: var(--dm-primary);
+    color: #121212; /* Dark text for contrast */
+  }
+
+  /* Form Elements */
+  .form-control {
+    background-color: #252525 !important;
+    border-color: var(--dm-divider) !important;
+    color: white !important;
+  }
+  .form-control::placeholder { color: #777 !important; }
+
+  /* Soft Skill Badges */
+  .bg-soft-primary {
+    background-color: rgba(100, 181, 246, 0.15);
+    color: var(--dm-primary);
+    border-color: rgba(100, 181, 246, 0.2);
+  }
+}

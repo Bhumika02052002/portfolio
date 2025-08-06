@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasars | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="print.css" media="print">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fasars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn btn-sm btn-outline-light ms-2">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold mb-3">Bhumika Mishra</h1>
+                    <h2 class="mb-4">Computer Engineering Student</h2>
+                    <p class="lead mb-4">Passionate about creating Android apps and web solutions with a strong background in Java, Android Studio, and full-stack development.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4">Contact Me</a>
+                        <a href="assets/Bhumika_Mishra_Resume.pdf" download class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-download me-2"></i>Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
+                    <div class="hero-img-container">
+                        <img src="images/profile.jpg" alt="Profile Image" class="img-fluid rounded-circle shadow" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-header mb-5" data-aos="fade-up">
+                <h2 class="text-center">About <span>Me</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="images/profile.jpg" alt="Profile Image" class="img-fluid rounded shadow" loading="lazy">
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <h3 class="mb-3">Devoted and Passionate Engineering Student</h3>
+                    <p class="mb-4">I'm particularly interested in creating Android apps. Competent in Java and familiar with the Android Studio IDE to create straightforward and intuitive mobile apps and websites with a strong background in HTML, CSS, JavaScript, PHP, and MySQL.</p>
+                    <p class="mb-4">A fast learner with a growth mindset, passionate about creating impactful mobile solutions. Always eager to improve skills, adapt to new technologies, and deliver high-quality work through creativity, persistence, and a love for coding.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled about-list">
+                                <li><strong>Phone:</strong> 6355915116</li>
+                                <li><strong>Email:</strong> mishrabhumika0202@gmail.com</li>
+                                <li><strong>GitHub:</strong> bhumika-mishra2002</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled about-list">
+                                <li><strong>Degree:</strong> Bachelor of Engineering</li>
+                                <li><strong>Specialization:</strong> Computer Engineering</li>
+                                <li><strong>College:</strong> GIDC Degree Engineering College</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header mb-5" data-aos="fade-up">
+                <h2 class="text-center">My <span>Resume</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+                        <h4>Bachelor of Engineering in Computer Engineering</h4>
+                        <h5>2024 – 2026</h5>
+                        <p><em>GIDC Degree Engineering College, Abrama (GTU)</em></p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Diploma in Computer Engineering</h4>
+                        <h5>2020 – 2023</h5>
+                        <p><em>Government Polytechnic Waghai (GTU) – College Topper</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <div class="resume-item">
+                        <h4>Frontend Intern</h4>
+                        <h5>July 02 – July 17, 2025</h5>
+                        <p><em>Wappzo Infotech Pvt. Ltd., Navsari, Gujarat</em></p>
+                        <ul>
+                            <li>Collaborated with the Frontend Team to develop responsive interfaces using HTML, CSS, Bootstrap, and JavaScript</li>
+                            <li>Completed daily development tasks under the mentorship of Dev Patel</li>
+                            <li>Improved code efficiency and UI design consistency</li>
+                            <li>Gained hands-on experience in dynamic web development workflows and best practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="resume-title">Certifications & Achievements</h3>
+                    <div class="resume-item">
+                        <ul>
+                            <li>SAP Code Unnati - Emerging Technologies Certificate (Training in IoT, Deep Learning, ML & Computer Vision)</li>
+                            <li>Public Speaking Competitions (Elocution) – 1st Place Winner</li>
+                            <li>10-Day Employability Development Workshop (Focused on communication, career readiness, and soft skills)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="section-header mb-5" data-aos="fade-up">
+                <h2 class="text-center">My <span>Projects</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-up">
+                    <div class="card project-card h-100">
+                        <img src="images/event-weaver.jpg" class="card-img-top" alt="Event Weaver Project" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Event Weaver – Full-Stack Event Management App</h5>
+                            <p class="card-text">Developed a full-stack event management platform with a responsive website (HTML, CSS, JS, PHP) and Android app using Android Studio and Firebase Real-Time Database.</p>
+                            <p class="card-text">Integrated AI-based filtering, real-time order tracking, and flexible payment options, enhancing event planning and user experience.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <span class="badge bg-primary me-2">HTML</span>
+                            <span class="badge bg-primary me-2">CSS</span>
+                            <span class="badge bg-primary me-2">JavaScript</span>
+                            <span class="badge bg-primary me-2">PHP</span>
+                            <span class="badge bg-primary me-2">Android Studio</span>
+                            <span class="badge bg-primary me-2">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card project-card h-100">
+                        <div class="card-img-top placeholder-img d-flex align-items-center justify-content-center">
+                            <i class="fas fa-plus fa-3x text-muted"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">More Projects Coming Soon</h5>
+                            <p class="card-text">I'm constantly working on new projects to expand my skills and portfolio. Check back later for updates!</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <span class="badge bg-secondary me-2">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light" style="color: black !important;">
+        <div class="container"   >
+            <div class="section-header mb-5" data-aos="fade-up">
+                <h2 class="text-center"><h2 style="color: black !important;" > My</h2> <h2><span>Skills</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" style="color: black !important; " >
+                    <h3 class="skills-subtitle" style="color: black !important; " >Technical Skills</h3>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 style="color: black !important; " >HTML/CSS</h6>
+                            <span style="color: black !important; " >90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 style="color: black !important; " >JavaScript</h6>
+                            <span style="color: black !important; " >80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 style="color: black !important; " >PHP</h6>
+                            <span style="color: black !important; " >85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 style="color: black !important; " >Java</h6>
+                            <span style="color: black !important; " >88%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="88"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="skills-subtitle" style="color: black !important; " >Tools & Databases</h3>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 style="color: black !important; " >Android Studio</h6>
+                            <span style="color: black !important; " >85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 style="color: black !important; " >MySQL</h6>
+                            <span style="color: black !important; " >82%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 style="color: black !important; " >Firebase</h6>
+                            <span style="color: black !important; " >78%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="78"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 style="color: black !important; " >Bootstrap</h6>
+                            <span style="color: black !important; " >90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="skills-subtitle" style="color: black !important; " >Soft Skills</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-soft-primary p-2">Problem Solving</span>
+                        <span class="badge bg-soft-primary p-2">Teamwork</span>
+                        <span class="badge bg-soft-primary p-2">Communication</span>
+                        <span class="badge bg-soft-primary p-2">Public Speaking</span>
+                        <span class="badge bg-soft-primary p-2">Fast Learner</span>
+                        <span class="badge bg-soft-primary p-2">Creativity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="section-header mb-5" data-aos="fade-up">
+                <h2 class="text-center">Contact <span>Me</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Get In Touch</h3>
+                        <div class="info-item d-flex mb-4">
+                            <div class="icon-box me-3">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>6355915116</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex mb-4">
+                            <div class="icon-box me-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>mishrabhumika0202@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex mb-4">
+                            <div class="icon-box me-3">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h5>GitHub</h5>
+                                <p>bhumika-mishra2002</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Fasars. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by Bhumika Mishra</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn btn-primary scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>

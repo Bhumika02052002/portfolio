@@ -1,0 +1,170 @@
+/* ===== BASE STYLES & VARIABLES ===== */
+:root {
+  /* Font */
+  --font-family: 'Poppins', sans-serif;
+  
+  /* Light Mode Variables */
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --text-color: #333;
+  --text-light: #6c757d;
+  --bg-light: #f8f9fa;
+  --transition: all 0.3s ease;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: #fff;
+  line-height: 1.6;
+  transition: var(--transition);
+}
+
+/* ===== COMPONENT STYLES ===== */
+/* Navbar */
+.navbar {
+  padding: 15px 0;
+  background-color: var(--dark-color) !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+  padding: 10px 0;
+  background-color: var(--dark-color) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  min-height: 600px;
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.9), rgba(44, 62, 80, 0.9)), 
+              url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Section Styling */
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.section-header h2 span {
+  color: var(--primary-color);
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Resume & Project Cards */
+.resume-item, .project-card {
+  padding: 25px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--primary-color);
+  transition: var(--transition);
+}
+
+.resume-item:hover, .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn {
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+/* Skills Section */
+.skill-item h6 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+.bg-soft-primary {
+    background-color: rgba(52, 152, 219, 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+/* Scroll-to-top button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top.active {
+    display: block;
+    opacity: 1;
+}
+
+.scroll-top:hover {
+    transform: scale(1.1);
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 991.98px) {
+  section { padding: 80px 0; }
+  .hero-section h1 { font-size: 2.8rem; }
+}
+
+@media (max-width: 767.98px) {
+  section { padding: 60px 0; }
+  .section-header h2 { font-size: 2rem; }
+}
