@@ -34,7 +34,7 @@ function typeEffect() {
 }
 typeEffect();
 
-// Contact form submission with improved error handling
+// Contact form submission (Formspree)
 const contactForm = document.getElementById("contactForm");
 const sendBtn = document.getElementById("sendMessageBtn");
 const formStatus = document.getElementById("formStatus");
