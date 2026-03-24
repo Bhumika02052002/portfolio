@@ -1,422 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fasars | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dark-mode.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="preloader.css">
-    <link rel="stylesheet" href="print.css" media="print">
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhumika Mishra - Aspiring Cyber Security Analyst | SOC, Vulnerability Assessment, TryHackMe, and hands-on security labs.">
+  <meta name="keywords" content="Cyber Security, SOC, Vulnerability Assessment, TryHackMe, Fresher, Bhumika Mishra">
+  <meta name="author" content="Bhumika Mishra">
+  <title>Bhumika Mishra | Aspiring Cyber Security Analyst</title>
+  <!-- Bootstrap CSS + Icons + Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarNav">
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="spinner-border text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    </div>
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <button id="themeToggle" class="btn btn-sm btn-outline-light ms-2">
-                            <i class="fas fa-moon"></i>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-7" data-aos="fade-right">
-                    <h1 class="display-3 fw-bold mb-3">Bhumika Mishra</h1>
-                    <h2 class="mb-4">Computer Engineering Student</h2>
-                    <p class="lead mb-4">Passionate about creating Android apps and web solutions with a strong background in Java, Android Studio, and full-stack development.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#contact" class="btn btn-primary btn-lg px-4">Contact Me</a>
-                        <a href="Bhumika_Mishra_Resume.pdf" download class="btn btn-outline-light btn-lg px-4">
-                            <i class="fas fa-download me-2"></i>Download CV
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
-                    <div class="hero-img-container">
-                        <img src="profile.jpg" alt="Profile Image" class="img-fluid rounded-circle shadow" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="section-header mb-5" data-aos="fade-up">
-                <h2 class="text-center">About <span>Me</span></h2>
-                <div class="divider"></div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
-                    <img src="images/profile.jpg" alt="Profile Image" class="img-fluid rounded shadow" loading="lazy">
-                </div>
-                <div class="col-lg-8" data-aos="fade-left">
-                    <h3 class="mb-3">Devoted and Passionate Engineering Student</h3>
-                    <p class="mb-4">I'm particularly interested in creating Android apps. Competent in Java and familiar with the Android Studio IDE to create straightforward and intuitive mobile apps and websites with a strong background in HTML, CSS, JavaScript, PHP, and MySQL.</p>
-                    <p class="mb-4">A fast learner with a growth mindset, passionate about creating impactful mobile solutions. Always eager to improve skills, adapt to new technologies, and deliver high-quality work through creativity, persistence, and a love for coding.</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled about-list">
-                                <li><strong>Phone:</strong> 6355915116</li>
-                                <li><strong>Email:</strong> mishrabhumika0202@gmail.com</li>
-                                <li><strong>GitHub:</strong> bhumika-mishra2002</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled about-list">
-                                <li><strong>Degree:</strong> Bachelor of Engineering</li>
-                                <li><strong>Specialization:</strong> Computer Engineering</li>
-                                <li><strong>College:</strong> GIDC Degree Engineering College</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="py-5 bg-light">
-        <div class="container">
-            <div class="section-header mb-5" data-aos="fade-up">
-                <h2 class="text-center">My <span>Resume</span></h2>
-                <div class="divider"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-up">
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>Bachelor of Engineering in Computer Engineering</h4>
-                        <h5>2024 – 2026</h5>
-                        <p><em>GIDC Degree Engineering College, Abrama (GTU)</em></p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Diploma in Computer Engineering</h4>
-                        <h5>2020 – 2023</h5>
-                        <p><em>Government Polytechnic Waghai (GTU) – College Topper</em></p>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>Frontend Intern</h4>
-                        <h5>July 02 – July 17, 2025</h5>
-                        <p><em>Wappzo Infotech Pvt. Ltd., Navsari, Gujarat</em></p>
-                        <ul>
-                            <li>Collaborated with the Frontend Team to develop responsive interfaces using HTML, CSS, Bootstrap, and JavaScript</li>
-                            <li>Completed daily development tasks under the mentorship of Dev Patel</li>
-                            <li>Improved code efficiency and UI design consistency</li>
-                            <li>Gained hands-on experience in dynamic web development workflows and best practices</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h3 class="resume-title">Certifications & Achievements</h3>
-                    <div class="resume-item">
-                        <ul>
-                            <li>SAP Code Unnati - Emerging Technologies Certificate (Training in IoT, Deep Learning, ML & Computer Vision)</li>
-                            <li>Public Speaking Competitions (Elocution) – 1st Place Winner</li>
-                            <li>10-Day Employability Development Workshop (Focused on communication, career readiness, and soft skills)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <div class="section-header mb-5" data-aos="fade-up">
-                <h2 class="text-center">My <span>Projects</span></h2>
-                <div class="divider"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4" data-aos="fade-up">
-                    <div class="card project-card h-100">
-                        <img src="images/event-weaver.jpg" class="card-img-top" alt="Event Weaver Project" loading="lazy">
-                        <div class="card-body">
-                            <h5 class="card-title">Event Weaver – Full-Stack Event Management App</h5>
-                            <p class="card-text">Developed a full-stack event management platform with a responsive website (HTML, CSS, JS, PHP) and Android app using Android Studio and Firebase Real-Time Database.</p>
-                            <p class="card-text">Integrated AI-based filtering, real-time order tracking, and flexible payment options, enhancing event planning and user experience.</p>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <span class="badge bg-primary me-2">HTML</span>
-                            <span class="badge bg-primary me-2">CSS</span>
-                            <span class="badge bg-primary me-2">JavaScript</span>
-                            <span class="badge bg-primary me-2">PHP</span>
-                            <span class="badge bg-primary me-2">Android Studio</span>
-                            <span class="badge bg-primary me-2">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card h-100">
-                        <div class="card-img-top placeholder-img d-flex align-items-center justify-content-center">
-                            <i class="fas fa-plus fa-3x text-muted"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">More Projects Coming Soon</h5>
-                            <p class="card-text">I'm constantly working on new projects to expand my skills and portfolio. Check back later for updates!</p>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <span class="badge bg-secondary me-2">Coming Soon</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light" style="color: black !important;">
-        <div class="container"   >
-            <div class="section-header mb-5" data-aos="fade-up">
-                <h2 class="text-center"><h2 style="color: black !important;" > My</h2> <h2><span>Skills</span></h2>
-                <div class="divider"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-up" style="color: black !important; " >
-                    <h3 class="skills-subtitle" style="color: black !important; " >Technical Skills</h3>
-                    <div class="skill-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 style="color: black !important; " >HTML/CSS</h6>
-                            <span style="color: black !important; " >90%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 style="color: black !important; " >JavaScript</h6>
-                            <span style="color: black !important; " >80%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 style="color: black !important; " >PHP</h6>
-                            <span style="color: black !important; " >85%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 style="color: black !important; " >Java</h6>
-                            <span style="color: black !important; " >88%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="88"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="skills-subtitle" style="color: black !important; " >Tools & Databases</h3>
-                    <div class="skill-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 style="color: black !important; " >Android Studio</h6>
-                            <span style="color: black !important; " >85%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 style="color: black !important; " >MySQL</h6>
-                            <span style="color: black !important; " >82%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="82"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 style="color: black !important; " >Firebase</h6>
-                            <span style="color: black !important; " >78%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="78"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 style="color: black !important; " >Bootstrap</h6>
-                            <span style="color: black !important; " >90%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="90"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h3 class="skills-subtitle" style="color: black !important; " >Soft Skills</h3>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-soft-primary p-2">Problem Solving</span>
-                        <span class="badge bg-soft-primary p-2">Teamwork</span>
-                        <span class="badge bg-soft-primary p-2">Communication</span>
-                        <span class="badge bg-soft-primary p-2">Public Speaking</span>
-                        <span class="badge bg-soft-primary p-2">Fast Learner</span>
-                        <span class="badge bg-soft-primary p-2">Creativity</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <div class="section-header mb-5" data-aos="fade-up">
-                <h2 class="text-center">Contact <span>Me</span></h2>
-                <div class="divider"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
-                    <div class="contact-info">
-                        <h3 class="mb-4">Get In Touch</h3>
-                        <div class="info-item d-flex mb-4">
-                            <div class="icon-box me-3">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <h5>Phone</h5>
-                                <p>6355915116</p>
-                            </div>
-                        </div>
-                        <div class="info-item d-flex mb-4">
-                            <div class="icon-box me-3">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h5>Email</h5>
-                                <p>mishrabhumika0202@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="info-item d-flex mb-4">
-                            <div class="icon-box me-3">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div>
-                                <h5>GitHub</h5>
-                                <p>bhumika-mishra2002</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-links mt-4">
-                        <a href="#" class="me-3"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-7" data-aos="fade-left">
-                    <form id="contactForm" class="contact-form">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2025 Fasars. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by Bhumika Mishra</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="btn btn-primary scroll-top">
-        <i class="fas fa-arrow-up"></i>
+<!-- Navigation (same as before) -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Bhumika Mishra</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cyber-focus">Cyber Focus</a></li>
+        <li class="nav-item"><a class="nav-link" href="#labs">Hands-on Labs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
-    <script src="main.js"></script>
+<!-- Hero Section (unchanged) -->
+<section id="home" class="hero">
+  <div class="container text-center">
+    <h1>Bhumika Mishra</h1>
+    <p class="fs-4 mt-2">Aspiring Cyber Security Analyst</p>
+    <div class="mt-2 mb-3">
+      <span class="typewriter-text" id="dynamic-text"></span>
+    </div>
+    <p class="lead mx-auto" style="max-width: 680px;">Focused on identifying vulnerabilities, analyzing threats, and building secure systems</p>
+    <div class="mt-4">
+      <a href="#projects" class="btn btn-cyber me-2"><i class="fas fa-code-branch me-1"></i> View Projects</a>
+      <button id="resumeBtnHero" class="btn btn-solid"><i class="fas fa-file-download me-1"></i> Download Resume</button>
+    </div>
+  </div>
+</section>
+
+<div class="container py-4">
+  <!-- About Section (unchanged) -->
+  <section id="about" class="fade-up my-5">
+    <h2 class="section-title">About Me</h2>
+    <div class="row mt-3">
+      <div class="col-lg-8">
+        <p class="fs-5">👩‍💻 I'm a cybersecurity enthusiast who enjoys learning how systems work and how to make them more secure. My interest lies in <strong>Security Operations (SOC)</strong>, <strong>Vulnerability Assessment</strong>, and I'm currently exploring <strong>SIEM</strong> tools. I believe in hands-on learning – I've spent time solving real-world inspired challenges on TryHackMe and Hack The Box to build practical skills.</p>
+        <p class="mt-2">📍 Gujarat, India | 🌍 Ready to Relocate | 💼 Open for entry-level Cyber Security / SOC Analyst roles</p>
+        <div class="mt-3">
+          <span class="badge bg-dark text-info me-2 p-2"><i class="fas fa-shield-alt me-1"></i> SOC Fundamentals</span>
+          <span class="badge bg-dark text-info me-2 p-2"><i class="fas fa-chart-line me-1"></i> Vulnerability Assessment</span>
+          <span class="badge bg-dark text-info p-2"><i class="fas fa-brain me-1"></i> SIEM Exploration</span>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3 mt-lg-0">
+        <div class="card-bg p-3 text-center">
+          <i class="fas fa-certificate fa-2x text-info mb-2"></i>
+          <h5>Currently Learning</h5>
+          <p class="mb-0">SIEM (Splunk), Threat Hunting basics, Cloud Security fundamentals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section (unchanged) -->
+  <section id="skills" class="fade-up my-5">
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-4">
+        <div class="card-bg p-3">
+          <i class="fas fa-shield-virus fs-3 text-info mb-2"></i>
+          <h5>Cybersecurity Basics</h5>
+          <div><span class="skill-badge">Vulnerability Assessment</span> <span class="skill-badge">Threat Analysis</span> <span class="skill-badge">Incident Response basics</span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card-bg p-3">
+          <i class="fas fa-tools fs-3 text-info mb-2"></i>
+          <h5>Security Tools</h5>
+          <div><span class="skill-badge">Nmap</span> <span class="skill-badge">Wireshark</span> <span class="skill-badge">Kali Linux</span> <span class="skill-badge">SQLmap</span> <span class="skill-badge">Hydra</span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card-bg p-3">
+          <i class="fas fa-code fs-3 text-info mb-2"></i>
+          <h5>Programming & Scripting</h5>
+          <div><span class="skill-badge">Python</span> <span class="skill-badge">JavaScript</span> <span class="skill-badge">HTML/CSS</span> <span class="skill-badge">SQL</span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card-bg p-3">
+          <i class="fas fa-network-wired fs-3 text-info mb-2"></i>
+          <h5>Networking & OS</h5>
+          <div><span class="skill-badge">TCP/IP, DNS</span> <span class="skill-badge">Windows/Linux CLI</span> <span class="skill-badge">Network Analysis</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (unchanged) -->
+  <section id="projects" class="fade-up my-5">
+    <h2 class="section-title">🔐 Projects</h2>
+    <div class="row g-4 mt-2">
+
+      <!-- SQLiShield - Featured -->
+      <div class="col-md-12">
+        <div class="card-bg project-featured p-4">
+          <div class="d-flex flex-wrap justify-content-between align-items-start">
+            <h3><i class="fas fa-database me-2 text-info"></i>SQLiShield</h3>
+            <span class="badge bg-info text-dark">⭐ Featured Project</span>
+          </div>
+          <p><strong>Professional SQL Injection Scanner GUI</strong> – A Python desktop application that wraps sqlmap with an intuitive interface. Detects SQLi vulnerabilities, extracts full database contents from vulnerable targets, and generates detailed PDF reports.</p>
+          <p><strong>Key Features:</strong> Real-time scan logs, configurable attack parameters (level, risk), vulnerability list with remediation advice, and one-click PDF report generation.</p>
+          <p><strong>Tech Stack:</strong> Python, PySide6 (Qt), sqlmap, reportlab</p>
+          <div class="mt-2">
+            <a href="https://github.com/Bhumika02052002/SQLiShield" target="_blank" rel="noopener noreferrer" class="text-info me-3 project-link"><i class="fab fa-github"></i> GitHub Repository</a>
+            <span class="text-secondary"><i class="fas fa-file-alt"></i> .exe available (run from source for full features)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smart Port Scanner -->
+      <div class="col-md-6">
+        <div class="card-bg p-3 h-100">
+          <h5><i class="fas fa-portrait me-2 text-info"></i>Smart Port Scanner</h5>
+          <p>Network scanner that identifies open ports, running services, and basic vulnerability hints using Nmap integration. Helps understand network exposure.</p>
+          <small>Tech: Python, Nmap, socket</small>
+          <div class="mt-2 d-flex gap-3">
+            <a href="https://github.com/Bhumika02052002/SMART-PORT-SCANNER" target="_blank" rel="noopener noreferrer" class="text-info project-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://bhumika02052002.github.io/SMART-PORT-SCANNER/" target="_blank" rel="noopener noreferrer" class="text-info project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SecurePass Pro -->
+      <div class="col-md-6">
+        <div class="card-bg p-3 h-100">
+          <h5><i class="fas fa-lock me-2 text-info"></i>SecurePass Pro</h5>
+          <p>Password strength checker with real-time feedback, entropy estimation, and educational tips for creating strong passwords.</p>
+          <small>Tech: HTML, CSS, JavaScript</small>
+          <div class="mt-2">
+            <a href="https://bhumika02052002.github.io/SecurePass-Pro/" target="_blank" rel="noopener noreferrer" class="text-info project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Weaver -->
+      <div class="col-md-6">
+        <div class="card-bg p-3 h-100">
+          <h5><i class="fas fa-calendar-alt me-2 text-info"></i>Event Weaver</h5>
+          <p>Multi-role event management platform with separate interfaces for organizers and attendees. Features secure login, session handling, and personalized recommendations based on user preferences.</p>
+          <small>Tech: PHP, MySQL, JavaScript, Bootstrap</small>
+          <div class="mt-2 d-flex gap-3">
+            <a href="https://github.com/Bhumika02052002/Event-Weaver" target="_blank" rel="noopener noreferrer" class="text-info project-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://bhumika02052002.github.io/Event-Weaver/" target="_blank" rel="noopener noreferrer" class="text-info project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sixteen Clothing -->
+      <div class="col-md-6">
+        <div class="card-bg p-3 h-100">
+          <h5><i class="fas fa-tshirt me-2 text-info"></i>Sixteen Clothing</h5>
+          <p>Fully responsive e-commerce frontend with product filtering, cart simulation, and modern UI/UX practices.</p>
+          <small>Tech: HTML, CSS, JavaScript</small>
+          <div class="mt-2">
+            <a href="https://bhumika02052002.github.io/sixteen-clothing-website" target="_blank" rel="noopener noreferrer" class="text-info project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p class="text-info"><i class="fas fa-code-branch"></i> More projects are in development – stay tuned!</p>
+    </div>
+  </section>
+
+  <!-- Experience & Training (unchanged) -->
+  <section id="experience" class="fade-up my-5">
+    <h2 class="section-title">Internship & Training</h2>
+    <div class="card-bg p-4 mt-3 mb-4">
+      <div class="d-flex flex-wrap justify-content-between">
+        <h4><i class="fas fa-briefcase me-2"></i>Frontend Intern</h4>
+        <span class="text-info">Wappzo Infotech | 2023</span>
+      </div>
+      <ul class="mt-2">
+        <li>Collaborated with a team to build responsive web modules, improving UI for client dashboards.</li>
+        <li>Performed manual code reviews and contributed minor security fixes like input validation to prevent XSS.</li>
+        <li>Learned agile workflow, version control (Git), and effective team communication.</li>
+      </ul>
+    </div>
+    <div class="card-bg p-4">
+      <div class="d-flex flex-wrap justify-content-between">
+        <h4><i class="fas fa-shield-alt me-2"></i>Cybersecurity Training</h4>
+        <span class="text-info">Tata STRIVE | Dec 2025 – Mar 2026</span>
+      </div>
+      <ul class="mt-2">
+        <li>Intensive 4-month foundation course covering cybersecurity fundamentals, vulnerability assessment, penetration testing basics, and digital forensics.</li>
+        <li>Hands-on with Linux/Windows commands and Kali Linux tools: SQLmap, Hydra, Wireshark, Nmap, Zenmap, and password crackers.</li>
+        <li>Practical experience in network analysis, vulnerability scanning, and ethical hacking methodologies.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Cyber Focus (unchanged) -->
+  <section id="cyber-focus" class="fade-up my-5">
+    <h2 class="section-title">Cyber Risk & Security Focus</h2>
+    <div class="row g-3 mt-2">
+      <div class="col-md-4">
+        <div class="card-bg p-3 text-center h-100">
+          <i class="fas fa-eye fa-2x text-info mb-2"></i>
+          <h5>Security Operations (SOC)</h5>
+          <p>Understanding of SOC workflows, alert triage, and basic incident handling.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-bg p-3 text-center h-100">
+          <i class="fas fa-search fa-2x text-info mb-2"></i>
+          <h5>Vulnerability Assessment</h5>
+          <p>Experience with vulnerability scanning, interpreting results, and suggesting remediation.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-bg p-3 text-center h-100">
+          <i class="fas fa-chart-simple fa-2x text-info mb-2"></i>
+          <h5>Exploring SIEM</h5>
+          <p>Currently learning SIEM concepts, log analysis, and basic correlation rules.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hands-on Labs (unchanged) -->
+  <section id="labs" class="fade-up my-5">
+    <h2 class="section-title">Hands-on Learning</h2>
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <div class="card-bg p-4">
+          <div class="d-flex flex-wrap gap-3 mb-3">
+            <span class="cyber-tag"><i class="fab fa-tryhackme me-2"></i>TryHackMe: 50+ rooms completed</span>
+            <span class="cyber-tag"><i class="fas fa-cube me-2"></i>Hack The Box: Active member</span>
+            <span class="cyber-tag"><i class="fas fa-chart-line me-2"></i>Focus: Web attacks, network scanning, privilege escalation</span>
+          </div>
+          <p>I regularly practice on platforms like TryHackMe and Hack The Box to build practical skills. I've solved over 50 rooms covering topics like:</p>
+          <ul>
+            <li>Vulnerability scanning with Nmap and OpenVAS</li>
+            <li>Web application attacks (SQLi, XSS, file inclusion)</li>
+            <li>Network traffic analysis with Wireshark</li>
+            <li>Password attacks with Hydra and John the Ripper</li>
+            <li>Basic forensics and log analysis</li>
+          </ul>
+          <p class="mb-0"><i class="fas fa-info-circle text-info"></i> These labs give me a realistic view of security operations and help me apply theoretical knowledge in a safe environment.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 mt-md-0 text-center">
+        <i class="fas fa-laptop-code fa-4x text-info mb-2"></i>
+        <p class="small">Learning by doing – building confidence in real-world security scenarios.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Download (unchanged) -->
+  <section id="resume" class="fade-up my-5 text-center">
+    <div class="card-bg p-5">
+      <h3><i class="fas fa-file-pdf me-2 text-danger"></i> Download My Resume</h3>
+      <p class="lead">Open to entry-level Cyber Security, SOC Analyst, or Cyber Risk roles. Let's connect!</p>
+      <button id="resumeBtnSection" class="btn btn-solid btn-lg mt-2"><i class="fas fa-download me-2"></i>Download Resume (PDF)</button>
+      <p class="mt-3 text-secondary"><i class="fas fa-check-circle text-success"></i> ATS-friendly | Honest representation of skills</p>
+    </div>
+  </section>
+
+  <!-- Contact Section (UPDATED) -->
+  <section id="contact" class="fade-up my-5">
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="row mt-4">
+      <div class="col-lg-6">
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="fas fa-envelope contact-icon me-3"></i> mishrabhumi43@gmail.com</li>
+          <li class="mb-3"><i class="fas fa-phone-alt contact-icon me-3"></i> +91 6355915116</li>
+          <li class="mb-3"><i class="fab fa-linkedin-in contact-icon me-3"></i> <a href="https://www.linkedin.com/in/bhumikamishra2002" target="_blank" rel="noopener noreferrer" class="text-info text-decoration-none">linkedin.com/in/bhumikamishra2002</a></li>
+          <li class="mb-3"><i class="fab fa-github contact-icon me-3"></i> <a href="https://github.com/Bhumika02052002" target="_blank" rel="noopener noreferrer" class="text-info text-decoration-none">github.com/Bhumika02052002</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+          <div class="mb-3">
+            <input type="text" name="name" class="form-control bg-dark text-light border-secondary" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control bg-dark text-light border-secondary" placeholder="Email address" required>
+          </div>
+          <div class="mb-3">
+            <textarea name="message" rows="3" class="form-control bg-dark text-light border-secondary" placeholder="Message / Opportunity details" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-cyber" id="sendMessageBtn">
+            <i class="fas fa-paper-plane me-1"></i> Send Message
+          </button>
+          <div id="formStatus" class="mt-2 small"></div>
+        </form>
+        <div class="mt-3 text-center">
+          <p class="text-secondary">Or reach me directly at <a href="mailto:mishrabhumi43@gmail.com" class="text-info">mishrabhumi43@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 mt-4">
+    <p class="mb-0 small">© 2026 Bhumika Mishra — Aspiring Cyber Security Analyst | Hands-on, honest, and ready to grow</p>
+  </footer>
+</div>
+
+<!-- Toast Container -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="externalLinkToast" class="toast align-items-center text-bg-dark border-info" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        <i class="fas fa-external-link-alt me-2 text-info"></i> Opening project in new tab...
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
